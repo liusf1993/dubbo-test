@@ -1,5 +1,5 @@
 .idea/
-.iml
+*.iml
 test.json
 rebel.xml
 version.txt
