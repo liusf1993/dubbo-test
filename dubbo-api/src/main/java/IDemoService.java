@@ -1,3 +1,3 @@
 public interface IDemoService {
-    int[] sayHello();
+    int[] getData();
 }

@@ -1,7 +1,11 @@
+import java.util.Random;
+
 public class DemoServiceImpl implements IDemoService {
 
   @Override
-  public int[] sayHello() {
-    return new int[9 * 1024*1024];
+  public int[] getData() {
+    Random random = new Random();
+    int i = random.nextInt(8);
+    return new int[i * 1024 * 1024];
   }
 }
