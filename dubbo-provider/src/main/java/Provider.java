@@ -1,3 +1,4 @@
+import java.util.concurrent.Semaphore;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Provider {
@@ -6,6 +7,6 @@ public class Provider {
         System.setProperty("java.net.preferIPv4Stack", "true");
         new ClassPathXmlApplicationContext("classpath:provider.xml").start();
         System.out.println("Provider started.");
-        System.in.read(); // press any key to exit
+        new Semaphore(0).acquire();
     }
 }
