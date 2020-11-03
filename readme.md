@@ -1,8 +1,9 @@
 ### reproduce steps  
-1. Run `main` method of `Provider` in `dubbo-provider` module.    
-2. Run `main` method of `Consumer` in `dubbo-consumer` module.  
+1. Run `main` method of `Provider` in `dubbo-provider` module to start `provider-side`.    
+2. Run `main` method of `Consumer` in `dubbo-consumer` module to start `consumer-side`.  
 3. View memory cost by memory analyzed tool.    
-The command I used
+
+Tools and commands I used was below   
 1. find pid, `jps|grep "Consumer"` 
 result:`16238 Consumer`
 pid is 16238  
